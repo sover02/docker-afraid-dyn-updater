@@ -1,6 +1,7 @@
 # docker-afraid-dyn-updater
 
-Super simple container to update your [afraid.org] (https://freedns.afraid.org/dynamic/) freedns names
+Super simple container to update your [afraid.org](https://freedns.afraid.org/dynamic/) freedns names
+
 
 - `UPDATE_URL` is the URL that dynamically sets your new IP - Get from here: http://freedns.afraid.org/dynamic/
 - `UPDATE_INTERVAL` is the frequency at which to check/update 1800 is probably reasonable
