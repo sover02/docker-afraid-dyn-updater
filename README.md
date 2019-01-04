@@ -1,6 +1,6 @@
 # docker-afraid-dyn-updater
 
-Super simple curl-bot.
+Super simple container to update your [afraid.org] (https://freedns.afraid.org/dynamic/) freedns names
 
 - `UPDATE_URL` is the URL that dynamically sets your new IP - Get from here: http://freedns.afraid.org/dynamic/
 - `UPDATE_INTERVAL` is the frequency at which to check/update 1800 is probably reasonable
@@ -11,7 +11,7 @@ docker build -t url-test https://raw.githubusercontent.com/sover02/docker-afraid
 docker run -dit --restart always -e UPDATE_URL="http://freedns.afraid.org/dynamic/update.php?< AFRAID API KEY >" -e UPDATE_INTERVAL="300" dynamic-updater
 ```
 
-#### Simple Logging
+### Simple Logging
 
 ```
 # docker logs -f dde6f20a2a621f6a9f12b5f9cd4cf1300a4d9571ea63973cb020d3a1b491110f
